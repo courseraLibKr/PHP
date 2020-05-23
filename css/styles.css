@@ -1,0 +1,71 @@
+body {
+  font-size: 16px;
+  color: #000;
+  background-color: #fff;
+  font-family: 'Oxygen', sans-serif;
+}
+
+#header-nav {
+  background-color: #ccc;
+  border-radius: 0;
+  border: 2px solid #000;
+}
+
+.navbar-brand {
+  padding-top: 20px;
+}
+
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'arial', serif;
+  color: #000;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #696969; /* DimGray */
+  background: #DCDCDC; /* Gainsboro  */
+  text-align: center;
+}
+#nav-list a:hover {
+  color: #fff; 
+  background: #A9A9A9; /* DarkGray  */
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+	  
+#collapsable-nav
+{
+	width:100%;
+	text-align:center;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #000;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+
+#home-tiles>div{	
+	padding:2%;
+}
+
+#home-tiles>div>div{
+	background-color: #ccc;	
+	padding:5%;
+}
+
+#home-tiles h3{	
+	 font-size: 1.1em;
+	 font-weight: bold;
+}
