@@ -13,7 +13,7 @@
 	  var helloSpeaker = {};
 	  var speakWord = "Hello";
 	  helloSpeaker.name = "Yaakov"; 
-	  helloSpeaker.speak = function () { 
+	  helloSpeaker.speak = function (name) { 
 		  console.log(speakWord + " " + name);
 		}	 	  
 	  window.helloSpeaker = helloSpeaker;
