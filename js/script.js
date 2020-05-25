@@ -40,9 +40,9 @@ var showLoading = function (selector) {
 // with propValue in given 'string'
 var insertProperty = function (str, propName, propValue) {
   var propToReplace = "{{" + propName + "}}";
-	alert("1: propToReplace="+propToReplace+" propValue="+propValue);
-  str = str.replace(new RegExp(propToReplace, "g"), 'B');
-	alert("str="+str);
+	//alert("1: propToReplace="+propToReplace+" propValue="+propValue);
+  str = str.replace(new RegExp(propToReplace, "g"), propValue);
+	//alert("str="+str);
   return string;
 };
 
@@ -122,9 +122,9 @@ function buildAndShowHomeHTML (categories) {
       //
       // var homeHtmlToInsertIntoMainPage = ....
 	 //   alert(chosenCategoryShortName["short_name"]);
- var cSN=chosenCategoryShortName["short_name"];
+ 	var cSN=chosenCategoryShortName["short_name"];
 	var homeHtmlToInsertIntoMainPage=insertProperty(homeHtml,'randomCategoryShortName',"'"+cSN+"'");
-alert(homeHtmlToInsertIntoMainPage);
+//alert(homeHtmlToInsertIntoMainPage);
 
       // TODO: STEP 4: Insert the the produced HTML in STEP 3 into the main page
       // Use the existing insertHtml function for that purpose. Look through this code for an example
