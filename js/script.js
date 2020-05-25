@@ -123,7 +123,8 @@ function buildAndShowHomeHTML (categories) {
       //
       // var homeHtmlToInsertIntoMainPage = ....
 	 //   alert(chosenCategoryShortName["short_name"]);
-	var homeHtmlToInsertIntoMainPage=insertProperty(homeHtml,"randomCategoryShortName","'"+chosenCategoryShortName["short_name"]+"'");
+ var cSN=chosenCategoryShortName["short_name"];
+	var homeHtmlToInsertIntoMainPage=insertProperty(homeHtml,"randomCategoryShortName","'"+cSN+"'");
 alert(homeHtmlToInsertIntoMainPage);
 
       // TODO: STEP 4: Insert the the produced HTML in STEP 3 into the main page
