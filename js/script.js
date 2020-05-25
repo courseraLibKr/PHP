@@ -40,7 +40,7 @@ var showLoading = function (selector) {
 // with propValue in given 'string'
 var insertProperty = function (string, propName, propValue) {
   var propToReplace = "{{" + propName + "}}";
-	alert("propToReplace="+propToReplace+"  propValue="+propValue);
+	alert("1: propToReplace="+propToReplace+"/n  propValue="+propValue);
   string = string
     .replace(new RegExp(propToReplace, "g"), propValue);
 	alert(string);
