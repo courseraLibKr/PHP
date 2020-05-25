@@ -38,11 +38,11 @@ var showLoading = function (selector) {
 
 // Return substitute of '{{propName}}'
 // with propValue in given 'string'
-var insertProperty = function (string, propName, propValue) {
+var insertProperty = function (str, propName, propValue) {
   var propToReplace = "{{" + propName + "}}";
 	alert("1: propToReplace="+propToReplace+" propValue="+propValue);
-  string = string.replace(new RegExp(propToReplace, "g"), 'B');
-	alert(string);
+  str = str.replace(new RegExp(propToReplace, "g"), 'B');
+	alert("str="+str);
   return string;
 };
 
